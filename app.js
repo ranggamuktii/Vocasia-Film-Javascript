@@ -1,6 +1,6 @@
 let dataFilm = [];
 
-fetch('https://vocasia-film-javascript-8fk9slpqj-ranggamuktiis-projects.vercel.app/dataFilm.JSON')
+fetch('./dataFilm.JSON')
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
