@@ -1,0 +1,92 @@
+[
+  {
+    "poster": "img/24039400.jpg",
+    "judul": "JOKER: FOLIE A DEUX",
+    "sutradara": "Todd Phillips",
+    "durasi": "138 Minutes",
+    "bulan": "Oktober",
+    "tahun": 2024,
+    "bintang": 5
+  },
+  {
+    "poster": "img/24029700.jpg",
+    "judul": "HOME SWEET LOAN",
+    "sutradara": "Sabrina Rochelle",
+    "durasi": "112 Minutes",
+    "bulan": "Oktober",
+    "tahun": 2024,
+    "bintang": 3
+  },
+  {
+    "poster": "img/24027100.jpg",
+    "judul": "TRANSFORMERS ONE",
+    "sutradara": "Josh Cooley",
+    "durasi": "104 Minutes",
+    "bulan": "Oktober",
+    "tahun": 2024,
+    "bintang": 2
+  },
+  {
+    "poster": "img/24022300.jpg",
+    "judul": "LEMBAYUNG",
+    "sutradara": "Baim Wong",
+    "durasi": "122 Minutes",
+    "bulan": "Oktober",
+    "tahun": 2024,
+    "bintang": 4
+  },
+  {
+    "poster": "img/24039700.jpg",
+    "judul": "THE WILD ROBOT",
+    "sutradara": "Chris Sanders",
+    "durasi": "102 Minutes",
+    "bulan": "Oktober",
+    "tahun": 2022,
+    "bintang": 4
+  },
+  {
+    "poster": "img/23040300.jpg",
+    "judul": "13 Bom di Jakarta",
+    "sutradara": "Angga Dwimas",
+    "durasi": "143 Minutes",
+    "bulan": "Desember",
+    "tahun": 2023,
+    "bintang": 5
+  },
+  {
+    "poster": "img/23050400.jpg",
+    "judul": "Kang Mak from Pee Mak",
+    "sutradara": "Herwin Novianto",
+    "durasi": "143 Minutes",
+    "bulan": "Agustus",
+    "tahun": 2024,
+    "bintang": 4
+  },
+  {
+    "poster": "img/23080700.jpg",
+    "judul": "No Way Home",
+    "sutradara": "Jon Watts",
+    "durasi": "148 Minutes",
+    "bulan": "Desember",
+    "tahun": 2021,
+    "bintang": 5
+  },
+  {
+    "poster": "img/23060500.jpg",
+    "judul": "Comedy Island",
+    "sutradara": "Patrick Effendy",
+    "durasi": "40 Minutes",
+    "bulan": "November",
+    "tahun": 2023,
+    "bintang": 4
+  },
+  {
+    "poster": "img/23070600.jpg",
+    "judul": "Iron Man 3",
+    "sutradara": "Shane Black",
+    "durasi": "131 Minutes",
+    "bulan": "April",
+    "tahun": 2013,
+    "bintang": 4
+  }
+]
