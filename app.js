@@ -1,5 +1,5 @@
 let dataFilm = [];
-fetch('/dataFilm.json')
+fetch('/dataFilm.JSON')
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
