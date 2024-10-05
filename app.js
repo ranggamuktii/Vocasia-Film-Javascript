@@ -1,10 +1,18 @@
 let dataFilm = [];
 
 fetch('dataFilm.JSON')
-  .then((response) => response.json())
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
   .then((data) => {
     dataFilm = data;
     tampilkanDataFilm(dataFilm);
+  })
+  .catch((error) => {
+    console.error('Error fetching the JSON file:', error);
   });
 
 const cardFilmContainer = document.querySelector('.film-wrapper');
