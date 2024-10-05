@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: google sans;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    padding: 40px 50px;
+    color: white;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+nav .nav-container {
+    width: 1450px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+nav .nav-container .logo a img {
+    width: 150px;
+}
+
+nav .navdiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navdiv ul {
+    display: flex;
+    list-style: none;
+    align-items: center;    
+    gap:50px;
+    margin-right: 70px;
+}
+
+.navdiv ul li {
+    list-style: none;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.navdiv ul li a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.navdiv ul li:hover {
+    background-color: #f1f1f1;
+}
+
+nav .navdiv .btn {
+    display: flex;
+    gap: 20px;
+}
+
+.btn button {
+    border-radius: 10px;
+    background-color: #fcf3e2 ;
+    border: none;
+    cursor: pointer;
+}
+
+.btn button:last-child {
+    margin-right: 0;
+}
+
+.btn button:hover{
+    background-color: #F6943D;
+}
+
+.btn button a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    color: #F06400;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn button a:hover {
+    color: #ffffff;
+}
+
+nav.scrolled .nav-container .logo a img {
+    width: 150px;
+}
+
+nav.scrolled .navdiv ul li a {
+    color: #000000;
+}
+
+main .banner {
+    position: relative;
+    max-width: 1550px;
+    height: 570px;
+    margin: 0px auto 0px;
+    background-image: url(img/Banner3.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+main article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1550px;
+    height: 300px;
+    text-align: center;
+    margin: -100px auto;
+    background-color: #fff;
+    border-radius: 100px 100px 0 0;
+}
+
+main article h1{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+main article p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border:3.5px solid rgb(252, 243, 226, 0.8);
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon i {
+    color: #F06400;
+    font-size: 20px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    font-size: 17px;
+    font-weight: 400;
+    width: 100%;
+    font-weight: 600;
+    color:#F06400 ;
+}
+
+.search-box input::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color: #b8b8b8;
+}
+
+.film-container {
+    max-width: 1550px;
+    margin: 100px auto 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.garis-metode {
+    display: flex;
+    max-width: 600px;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.garis-metode h3 {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0px 50px;
+    color: #F06400;
+}
+
+.garis-metode .garis {
+    display: flex;
+    width: 100%;
+    border-top: 2px solid rgb(252, 243, 226, 0.8);
+    flex:1;
+}
+
+
+.film-wrapper {
+    display: grid;
+    max-width: 1550px;
+    margin: 40px auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));  
+    gap: 15px;
+    justify-content: center;
+}
+
+.card-film {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: normal;
+    padding: 0px 0px 15px;
+    border-radius: 14px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    background-color: #ffff;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card-film:hover {
+    transform: scale(0.98);
+}
+
+.card-film .thumbnail{
+    height: 300px;
+    border-radius: 14px 14px 0 0 ;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.review-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    opacity: 0;
+    transition: transform 0.5s ease;
+    border-radius: 14px;
+}
+
+.review-icon:hover {
+    opacity: 1;
+}
+
+.review-icon > * {
+    transform: translateY(25px);
+    transition: transform 0.6s ease;
+}
+
+.review-icon:hover > * {
+    transform: translateY(0px);
+}
+
+.review-icon i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.review-icon h6 {
+    font-size: 18px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 15px;
+    margin: 15px 0px 15px;
+}
+
+.card-tittle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    gap: 5px;
+}
+
+.card-tittle h5{
+    color: #8A8A8A;
+    font-weight: 500;
+    line-height: 1.2rem;
+    font-size: 0.9em;
+}
+
+.card-tittle .tag {
+    display: flex;
+    padding: 3px 10px;
+    box-sizing: border-box;
+    background-color: rgb(252, 243, 226, 0.5);
+    color: #F06400;
+    border-radius: 5px;
+    font-size: 12px;
+    place-content: center ;
+}
+
+.card-tittle img {
+    width: 20px;
+}
+
+.review-wrapper {
+    display: flex;
+    gap: 5px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.review-wrapper h5 {
+    color: #8A8A8A;
+    font-weight: 500;
+}
+
+.checked {
+    color: orange;
+}
+
+.tidak-tersedia {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tidak-tersedia img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
+
+footer hr {
+    border: 1.5px solid rgb(194, 194, 194, 0.5);
+}
+
+footer p{
+    color: #c2c2c2;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 15px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+.menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #F06400;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:last-child{
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0 ;
+    transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:last-child{
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 780px) {
+    .menu-toggle{
+        display: flex;
+    }
+
+    .menu-toggle span {
+        background-color: #F06400;
+    }
+    
+    nav {
+        justify-content: space-between;
+        padding: 25px 20px;
+        height: 20px;
+    }
+
+    nav .navdiv {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color : #ffffff;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav .nav-container .logo a img {
+        width: 100px;
+    }
+
+    nav.scrolled .nav-container .logo a img {
+        width: 100px;
+    }
+    
+
+    .navdiv ul {
+        display: flex;
+        flex-direction: column;
+        margin: 100px;
+        gap: 50px;
+    }
+
+    nav .navdiv .btn {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 60px;
+    }
+
+    nav .navdiv.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    main .banner {
+        height: 180px;
+    }
+
+    main article{
+        max-width: 1550px;
+        height: 180px;
+        margin: -25px auto;
+        border-radius: 30px 30px 0 0;
+    }
+
+    main article h1{
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    
+    main article p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .search-box {
+        width: 300px;
+        height: 40px;
+        border:2.5px solid rgb(252, 243, 226, 0.8);
+    }
+
+    
+    .search-icon i {
+        font-size: 15px;
+    }
+    
+    .search-box input {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .search-box input::placeholder {
+        font-size: 12px;
+    }
+
+    
+    .film-container {
+        margin: 18px auto 0px;
+    }
+
+    .garis-metode {
+        max-width: 300px;
+    }
+    
+    .garis-metode h3 {
+        font-size: 14px;
+        margin: 0px 20px;
+    }
+
+    .film-wrapper {
+        margin: 25px auto 15px;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 150px));  
+        gap: 12px;
+    }
+    
+    
+    .card-film .thumbnail{
+        height: 180px;
+    }
+
+    .card-film:hover {
+        transform: scale(1);
+    }
+
+    .card-film:active {
+        transform: scale(0.98);
+    }
+
+
+    .review-icon {
+        opacity: 0;
+    }
+
+    .review-icon:hover {
+        opacity: 0;
+    }
+
+    
+    .card-tittle {
+        gap: 2px;
+        align-items: center;
+    }
+
+    .card-tittle h5{
+        font-size: 8px
+    }
+
+    .card-tittle .tag {
+        padding: 3px 5px;
+        border-radius: 4px;
+        font-size: 7px;
+    }
+
+    .card-content {        
+        gap: 6px;
+        margin: 8px 0px 8px;
+    }
+
+    .card-content h3 {
+        font-size: 12px;
+    }
+
+    .review-wrapper .review {
+        font-size: 10px;
+    }
+
+    .review-wrapper h5 {
+        font-size: 8px;
+    }
+
+    .tidak-tersedia {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tidak-tersedia img {
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+
+    footer hr {
+        border: 1px solid rgb(194, 194, 194, 0.5);
+    }
+    
+    footer p{
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
