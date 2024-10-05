@@ -1,9 +1,13 @@
 let dataFilm = [];
-
 fetch('/dataFilm.json')
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    // Cek apakah respons berupa JSON
+    const contentType = response.headers.get('content-type');
+    if (!contentType || !contentType.includes('application/json')) {
+      throw new Error('Did not receive JSON');
     }
     return response.json();
   })
